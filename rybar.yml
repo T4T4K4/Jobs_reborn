@@ -1,0 +1,60 @@
+Rybar:
+  fullname: Rybar
+  shortname: Fi
+  description: Earns money from fishing.
+  ChatColour: AQUA
+  chat-display: full
+  max-level: 200
+  leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+  income-progression-equation: baseincome*((1.005)^(joblevel-1))
+  points-progression-equation: basepoints*((1.005)^(joblevel-1))
+  experience-progression-equation: baseexperience*((1.005)^(joblevel-1))
+  rejoinCooldown: 10
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Catcher
+      Objectives:
+      - Fish;cod;2
+      - Fish;salmon;2
+      - Fish;tropical_fish;2
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - Catch fish and get money
+      - Get 100 for this!
+  Gui:
+    Item: fishing_rod
+  Fish:
+    cod:
+      income: 5.0
+      experience: 5.0
+    salmon:
+      income: 10.0
+      experience: 10.0
+    tropical_fish:
+      income: 15.0
+      experience: 15.0
+    pufferfish:
+      income: 15.0
+      experience: 15.0
+    Dolphin:
+      income: 5.0
+      experience: 5.0
+    SQUID:
+      income: 2.0
+      experience: 2.0
+    GlowSquid:
+      income: 5.0
+      experience: 5.0
+  Kill:
+    Dolphin:
+      income: -7.0
+      experience: -7.0
+    Axolotl:
+      income: -7.0
+      experience: -7.0
+    Player:
+      income: 7.5
+      experience: 7.5

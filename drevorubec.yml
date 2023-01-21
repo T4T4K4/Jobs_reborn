@@ -1,0 +1,74 @@
+Drevorubec:
+  fullname: Drevorubec
+  shortname: W
+  description: Earns money felling and planting trees
+  ChatColour: GREEN
+  chat-display: full
+  max-level: 200
+  leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+  income-progression-equation: baseincome*((1.005)^(joblevel-1))
+  points-progression-equation: basepoints*((1.005)^(joblevel-1))
+  experience-progression-equation: baseexperience*((1.005)^(joblevel-1))
+  rejoinCooldown: 10
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Woodpecker
+      Objectives:
+      - Break;oak_log;50
+      - Break;birch_log;50
+      - Break;jungle_log;50
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - Break logs and get money
+      - Get 100 for this!
+  Gui:
+    Id: 17
+    Data: 2
+  Break:
+    oak_log:
+      income: 1.0
+      experience: 1.0
+    spruce_log:
+      income: 1.0
+      experience: 1.0
+    birch_log:
+      income: 1.0
+      experience: 1.0
+    jungle_log:
+      income: 1.0
+      experience: 1.0
+    acacia_log:
+      income: 1.0
+      experience: 1.0
+    dark_oak_log:
+      income: 1.0
+      experience: 1.0
+    stripped_oak_log:
+      income: 0.75
+      experience: 0.25
+    stripped_spruce_log:
+      income: 0.75
+      experience: 0.25
+    stripped_birch_log:
+      income: 0.75
+      experience: 0.25
+    stripped_jungle_log:
+      income: 0.75
+      experience: 0.25
+    stripped_acacia_log:
+      income: 0.75
+      experience: 0.25
+    stripped_dark_oak_log:
+      income: 0.75
+      experience: 0.25
+  Kill:
+    Player:
+      income: 7.5
+      experience: 7.5
+  custom-kill:
+    Woodcutter:
+      income: 10.0
+      experience: 10.0

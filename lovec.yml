@@ -1,0 +1,172 @@
+Lovec:
+  fullname: Lovec
+  shortname: H
+  description: Earns money killing animals and monsters.
+  ChatColour: RED
+  chat-display: full
+  max-level: 200
+  leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+  income-progression-equation: baseincome*((1.005)^(joblevel-1))
+  points-progression-equation: basepoints*((1.005)^(joblevel-1))
+  experience-progression-equation: baseexperience*((1.005)^(joblevel-1))
+  rejoinCooldown: 10
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Predator
+      Objectives:
+      - Kill;Wolf;10
+      - Kill;Creeper;3
+      - Kill;Skeleton;10
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - Kill everything what moves and get money
+      - Get 100 for this!
+  Gui:
+    Id: 261
+    Data: 0
+  Tame:
+    Wolf:
+      income: 20.0
+      experience: 15.0
+    Ocelot:
+      income: 20.0
+      experience: 15.0
+    Horse:
+      income: 20.0
+      experience: 15.0
+  Kill:
+    Chicken:
+      income: 5.0
+      experience: 5.0
+    Cow:
+      income: 6.0
+      experience: 5.0
+    Donkey:
+      income: 5.0
+      experience: 5.0
+    Llama:
+      income: 5.0
+      experience: 5.0
+    Pig:
+      income: 5.0
+      experience: 5.0
+    Sheep:
+      income: 5.0
+      experience: 5.0
+    Wolf:
+      income: 10.0
+      experience: 5.0
+    PolarBear:
+      income: 10.0
+      experience: 5.0
+    Creeper:
+      income: 15.0
+      experience: 15.0
+    Skeleton:
+      income: 10.0
+      experience: 15.0
+    Spider:
+      income: 10.0
+      experience: 15.0
+    Zombie:
+      income: 10.0
+      experience: 15.0
+    BLAZE:
+      income: 20.0
+      experience: 15.0
+    CAVE_SPIDER:
+      income: 20.0
+      experience: 15.0
+    ENDERMAN:
+      income: 2.0
+      experience: 2.0
+    GHAST:
+      income: 30.0
+      experience: 30.0
+    Strider:
+      income: 5.0
+      experience: 5.0
+    Piglin:
+      income: 5.0
+      experience: 5.0
+    Hoglin:
+      income: 5.0
+      experience: 5.0
+    GIANT:
+      income: 250.0
+      experience: 100.0
+    Goat:
+      income: 5.0
+      experience: 5.0
+    CAMEL:
+      income: 5.0
+      experience: 5.0
+    GUARDIAN:
+      income: 10.0
+      experience: 40.0
+    ElderGuardian:
+      income: 100.0
+      experience: 120.0
+    IRON_GOLEM:
+      income: 30.0
+      experience: 30.0
+    mushroom_cow:
+      income: 5.0
+      experience: 5.0
+    SILVERFISH:
+      income: 3.0
+      experience: 5.0
+    SNOWMAN:
+      income: 2.0
+      experience: 4.0
+    RABBIT:
+      income: 10.0
+      experience: 10.0
+    SHULKER:
+      income: 5.0
+      experience: 5.0
+    PHANTOM:
+      income: 7.0
+      experience: 10.0
+    DROWNED:
+      income: 5.0
+      experience: 5.0
+    HUSK:
+      income: 5.0
+      experience: 5.0
+    Illager:
+      income: 20.0
+      experience: 15.0
+    Illusioner:
+      income: 20.0
+      experience: 15.0
+    Pillager:
+      income: 20.0
+      experience: 15.0
+    Ravager:
+      income: 30.0
+      experience: 40.0
+    Vex:
+      income: 30.0
+      experience: 40.0
+    WITHER:
+      income: 30.0
+      experience: 50.0
+    WARDEN:
+      income: 70.0
+      experience: 100.0
+    ENDER_DRAGON:
+      income: 2000.0
+      experience: 2000.0
+    Panda:
+      income: -7.0
+      experience: -7.0
+    Villager:
+      income: -10.0
+      experience: -10.0
+    Player:
+      income: 9.0
+      experience: 7.5

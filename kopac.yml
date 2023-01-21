@@ -1,0 +1,62 @@
+Kopac:
+  fullname: Kopac
+  shortname: D
+  description: Earns money for terraforming the world.
+  ChatColour: GOLD
+  chat-display: full
+  max-level: 200
+  leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
+  income-progression-equation: baseincome*((1.005)^(joblevel-1))
+  points-progression-equation: basepoints*((1.005)^(joblevel-1))
+  experience-progression-equation: baseexperience*((1.005)^(joblevel-1))
+  rejoinCooldown: 10
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Ground Mole
+      Objectives:
+      - Break;dirt;50
+      - Break;grass_block;50
+      - Break;gravel;50
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - Dig blocks and get money
+      - Get 100 for this!
+  Gui:
+    Id: 269
+    Data: 0
+  Break:
+    red_sand:
+      income: 1
+      experience: 1
+    coarse_dirt:
+      income: 1
+      experience: 1
+    dirt:
+      income: 0.25
+      experience: 0.25
+    grass_block:
+      income: 0.3
+      experience: 0.3
+    gravel:
+      income: 1
+      experience: 1.0
+    mycelium:
+      income: 2
+      experience: 2
+    sand:
+      income: 0.4
+      experience: 0.5
+    clay:
+      income: 1
+      experience: 1.0
+  Kill:
+    Player:
+      income: 7.5
+      experience: 7.5
+  custom-kill:
+    Digger:
+      income: 10.0
+      experience: 10.0
